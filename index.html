@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tour A-Frame</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="a1" src="assets/1.jpg" />
+      <img id="a2" src="assets/2.jpg" />
+      <img id="a3" src="assets/3.jpg" />
+    </a-assets>
+    <a-image src="#a1" position="-1.5 1.8 -3" onclick="show('a1')"></a-image>
+    <a-image src="#a2" position="0 1.8 -3" onclick="show('a2')"></a-image>
+    <a-image src="#a3" position="1.5 1.8 -3" onclick="show('a3')"></a-image>
+    <a-sky src="#a1" id="sky"></a-sky>
+    <a-camera>
+      <a-cursor color="white"></a-cursor>
+    </a-camera>
+  </a-scene>
+  <script src="index.js"></script>
+</body>
+</html>
